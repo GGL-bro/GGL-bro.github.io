@@ -1,4 +1,4 @@
-;console.log('��ǰ�����Ϊ��ʾ��,���ܶ��ο�����Դ��ֻ������: http://www.bootstrapmb.com/item/10235 ');if(location.href.indexOf('ile:')<0){if(location.href.indexOf('oo')<0){location.href='http://www.bootstrapmb.com/item/10235'}};/*!
+/*!
  * jQuery JavaScript Library v1.4.2
  * http://jquery.com/
  *
