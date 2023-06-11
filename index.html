@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title style="line-height: 20px">火在网上：非物质文化遗产的海内外传播</title>
+    <!--====== 故事轮播图css ======-->
+    <link rel="stylesheet" type="text/css" href="./css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style_story.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery.jscrollpane.css" media="all" />
+    <!--====== Bootstrap ======-->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!--====== Fontawesome ======-->
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <!--====== Slick Slider ======-->
+    <link rel="stylesheet" href="static/css/slick.css">
+    <!--====== Nice Select  ======-->
+    <link rel="stylesheet" href="static/css/nice-select.css">
+    <!--====== Animate css  ======-->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!--====== Default css  ======-->
+    <link rel="stylesheet" href="static/css/default.css">
+    <!--====== Main css ======-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <!--====== 以下是你自己的 css ======-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/scu_logo.png">
+    <link rel="stylesheet" href="./css/dots.css">
+    <link rel="stylesheet" href="./css/style_time.css">
+    <script src="./js/jquery.min_lb.js"></script>
+    <script type="text/javascript" src="js/jquery.min_00.js"></script>
+    <script type="text/javascript">$(document).ready(function () {
+            $("#gallery_output img").not(":first").hide(); $("#gallery a").click(function () {
+                $("#gallery a").removeClass('on'); $(this).addClass("on"); if ($("#" + this.rel).is(":hidden")) { $("#gallery_output img").slideUp(); $("#" + this.rel).slideDown(); }
+            });
+        });</script>
+    <style type="text/css">
+        .div{
+            margin: 0;
+            padding:0;
+            float: left;
+            width: auto;
+            height: auto;
+        }
+        #gallery img {
+            border: none;
+        }
+
+        #gallery_nav {
+            float: left;
+            width: 112px;
+            text-align: center;
+        }
+
+        #gallery_nav a {
+            display: block;
+            height: 92px;
+        }
+
+        #gallery_output {
+            
+            width: 600px;
+            overflow: hidden;
+        }
+
+        #gallery_output img {
+            display: block;
+            margin: 0px auto 0 auto;
+        }
+
+        .on {
+            border: 1px solid rgba(92, 92, 92, 1.00);
+        }
+
+        .box {
+            width: 800px;
+            height: 248px;
+            margin: 50px auto;
+            box-shadow: 0 0 8px 3px #FFFFFF;
+        }
+
+        .box ul li {
+            position: relative;
+            width: 162px;
+            height: 110px;
+            border: 1px solid #FFFFFF;
+            float: left;
+            margin: 10px 15px;
+            overflow: hidden;
+        }
+
+        .box ul li img {
+            
+            display: flex;  
+            align-items: center
+
+        }
+
+        .txt {
+            position: absolute;
+            top: 0px;
+            left: -100%;
+            width: 154px;
+            height: 220px;
+            background: url(images/new-bg.png);
+            padding: 0 5px;
+        }
+
+        .txt h2 {
+            color: #FFFFFF;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+            border-bottom: 1px dashed #FFFFFF;
+            padding-bottom: 5px;
+        }
+
+        .txt p {
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 4px 8px;
+            font-family: "微软雅黑";
+        }
+
+        .btn {
+            width: 80px;
+            height: 30px;
+            background: cornflowerblue;
+            display: block;
+            color: #FFFFFF;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body onload="setDivHeight()" >
+    <div id="preloader"></div>
+    <div class="nav" id="nav" >
+        <a><img src="image/民俗文化.png" width="50" ></a>
+        <a style="color: white;">非遗火在网上</a>
+        <a style="margin-left: 590px">  </a>
+        <a class="anchor" href="#first-content">开篇</a> 
+        <a class="anchor" href="#anchor1">传播海内外</a>
+        <a class="anchor" href="#anchor2">传承新力量</a>  
+        <a class="anchor" href="#anchor3">非遗有余忆</a>
+        
+    </div>  
+
+    <div class="head-pic" id="head-pic">
+        <div class="head" id="head" style="margin-top:478px;">
+                <div class="main-title" id="main-title" >活在网上，火在当下</div>
+                <div class="sub-title" id="sub-title">数说非物质文化遗产的海内外传播</div>
+        </div>
+    </div>
+
+    <div class="content" id="first-content">
+        <!-- 1号小而快，2号大而快；3号大而慢，4号小而慢 -->
+        <div id='stars'></div> 
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id='stars4'></div>  
+        <div class="plain-text" id="first-content" style="width: 60%; margin: 0 auto; text-align: justify">
+            <p>在五千年奔流不息的历史长河中，中国的文化宝库熠熠闪光，孕育了无数的优秀传统文化技艺。我国<span class="span-bold">10万多个</span>非遗项目组成了一个巨大的文化宝库、艺术宝库、思想宝库，是中华民族智慧与文明的结晶，也是中国人民文化自信、民族自信的根基。</p>
+        </div>
+
+        <div class="list-001 " style="margin-top: 3em;margin-bottom: 3em;" >
+            <div style="width: 100% ;font-family:'Courier New', Courier, monospace; text-align: center;border-bottom: 1px solid #b8a588;margin-bottom: 8px;font-size: 24px;color: #f3f2ef;">中国非遗数全球第一</div>
+            <div class="table">
+                <div class="td" style="color: #F2E8CD;">
+                    <div style="font-size: 30px;    font-family: impact;">3610个 </div>
+                    <div>项目</div>
+                </div>
+                <div class="td" style="color: #F2E8CD;">
+                    <div style="font-size: 30px;    font-family: impact;">3057位</div>
+                    <div>传承人</div>
+                </div>
+                <div class="td" style="color: #F2E8CD;">
+                    <div style="font-size: 30px;    font-family: impact;">42项</div>
+                    <div>联合国教科文组织</div>
+                </div>
+                <div class="td" style="color: #F2E8CD;">
+                    <div style="font-size: 30px;    font-family: impact;">10个</div>
+                    <div>类别</div>
+                </div>
+            </div>
+            <div class="discription"></div>
+        </div>
+        <div class="plain-text" style="width: 60%; margin: 0 auto 30px; text-align: justify ;display: block;">
+            <p>申报非遗是难度高、流程复杂的工作，需要阐述申报项目名称、保护单位、保护目的和意义。入选国家级非遗代表名录的项目，具备历史、文化和科学的价值，同时具有展现中华文化创造力的典型性和代表性。目前为止，国务院已经公布了<span class="span-bold">5批</span>国家级的非物质文化遗产名录，第二批次公布的非遗项目数量最多，达到<span class="span-bold">一万三千五百多件</span>。</p>
+        </div>
+
+        <div class="content" style="margin-top:-110px">
+            <div class="pic-box" style="margin-top: 2em">
+                
+            </div>
+            <div class="plain-text" style="margin: 0 auto 30px; width: 60%; text-align: justify">
+                <p>具体而言，所有国家级非遗的类别中，数量最多的非遗项目传统技艺，top2到top11分别是传统技艺、传统民俗、传统戏剧、传统音乐、传统美术、传统舞蹈、民间文学、曲艺、传统医药、传统体育。
+                </p>    
+            </div>
+            <div class="pic-box" style="margin-top: 2em">
+                <iframe src='https://flo.uri.sh/visualisation/13980120/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:60%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+            </div>
+                
+            <div class="plain-text" style="margin: 0 auto 30px; width: 60%; text-align: justify">
+                <p>这11类国家级非遗的传承人中，传统戏剧的传承人数量最多，其次就是传统技艺。可见这两类大众喜闻乐见的非遗，能够世代传承、活态存在。
+                </p>    
+            </div>
+            <div class="pic-box" style="margin-top: 2em">
+                <iframe src="https://dycharts.com/xshow/index.html?id=c_846a5889fd32238b107aa2843a1e224d" width="600" height="470" scrolling="no" frameborder="0" align=""></iframe>
+                
+            </div>
+
+            <div class="plain-text" style="margin: 0 auto 30px; width: 60%; text-align: justify">
+                <p>传承人的性别比也是值得关注的现象，现在的国家级非遗传承人当中男性比例更高，占绝大多数，并且还呈现出逐年上升的趋势。
+                </p>    
+            </div>
+            <div class="pic-box" style="margin-top: 2em">
+                <iframe src="https://dycharts.com/xshow/index.html?id=c_59c4016e3d30629a280fba2c84b8b887" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            </div>
+
+            <div class="plain-text" style="margin: 0 auto 30px; width: 60%; text-align: justify">
+                <p>从传承地区的活力值上看，东部地区远高于中西部地区，而东北地区的传播活力值较为堪忧。这在不同地区非遗保护单位的数量呈现中也可见一斑。
+                </p>    
+            </div>
+            <div class="pic-box" style="margin-top: 2em">
+                <iframe src="https://dycharts.com/xshow/index.html?id=c_3ba085322536e235261a09471c75012f" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            </div>
+        </div>
+
+        <!-- 一半文一半图 -->
+        <div class="pic-box" style="width: 60%; margin: 0 auto;margin-top: 50px ">
+            <div class="side-desc" style="width: 50%; padding:0; margin:0; float: left; background-color:rgba(0,0,0,0); color: #F2E8CD; font-weight: normal">
+                <p ></p>
+            </div>
+            <!-- <img src="./image/拥抱.png" style="width:50%; float: left;"/> -->
+            
+        </div>
+    </div>    
+
+
+
+    </div>    
+    
+    <!-- 标准图表+文本段落 -->
+    <div class="content" id="first-content" style="margin-top:-110px">
+        <div class="pic-box" style="margin-top: 2em">
+            <img src="image/动态维诺图-副本.gif" width="600" height="510" scrolling="no" frameborder="0" align="" alt="">
+        </div>
+
+    </div>
+
+    <!--过渡透明 第二部分 -->
+    <div class="subsubtitle transparent-bg" id="anchor1">
+        传播海内外：影像传播为载体，推动文化走出去 
+    </div>
+  
+    <div class="content" style="margin-top: 0px ">
+        <div class="plain-text" style=" margin: 0 auto; width: 60%; text-align: justify">
+            <p ></p>
+        </div>
+       
+        <div class="rolling-key-words" >
+            <div id="div1" class="div1" style="line-height: 29px">
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_1()" id="keyword-1">还有很多的需要申遗和保护，传承，国际上的文化传播还是很少</a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_2()" id="keyword-2">中医，古建筑技术，民间艺术手艺都要保护啊</a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_3()" id="keyword-3">感谢互联网，让这个本快失传的技术变成了大部分簪娘的入门技术</a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_4()" id="keyword-4">戏曲，中国的国货艺术</a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_5()" id="keyword-5">有时为了完成一件缂丝作品需要几个月乃至一年以上</a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_6()" id="keyword-6">中国的一切文化、艺术、传承，才是真正的奢侈品</a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_7()" id="keyword-7">全世界只有中国会做的汝瓷，裂纹声如风铃般清脆！</a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_8()" id="keyword-8">I've heard of this! This is phenomenal! Few willing to learn this beautifully ancient practice. Truly magnificent </a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_9()" id="keyword-9">Yeh that’s not terrifying at all I’ll definitely sleep wel tonight </a>
+                <a onclick="return false" href="#" target="_blank" onmouseover="keyword_10()" id="keyword-10">I'm trying to learn Chinese I'm in love with culture there 💞 hello from Egypt 💞</a>
+            </div>
+        </div>
+
+        <div class="plain-text" style="font-size: 15px; margin: 0 auto 30px; width: 60%; text-align: center">
+            
+        </div>
+
+        <div class="plain-text" style=" margin: 0 auto; width: 60%; text-align: justify; margin-top: 3em">
+            <p >
+                李子柒的视频作品或呈现“种豆南山下”的田园生活的景观，或展现精美绝伦的非遗作品的制作过程，在海内外红极一时，打造众多的爆款作品。海内外的网友都对什么类型的非遗视频感兴趣呢？短则几十秒，长则几小时的非遗视频，涉及非遗类别广泛、主题多样，占据视频平台中的热门话题榜单</p>
+        </div>
+
+
+
+        <div class="plain-text" style="font-size: 14px; margin: 0 auto; width: 60%; text-align: center; color: #FAD04B; margin-top: -60px;margin-left: 190px">
+            
+        </div>
+       
+        <div class="plain-text" style=" margin: 0 auto; width: 60%; text-align: justify; margin-top: 3em">
+            <h2 style="color: #b8a588;"></h2>
+            <p>2022年6月8日，文旅产业指数实验室发布《2022年非物质文化遗产在海外短视频平台上的影响力报告》显示TikTok上非遗相关内容视频播放总量目前逾<span class="span-bold">308亿次</span>。</p>
+            <p>非遗视频在国内同样成为网友追捧的一个热点，公开数据显示，截至2022年6月国家级非遗项目抖音夏盖率<span class="span-bold">99.74%</span>，相关视频播放总数达<span class="span-bold">3726亿</span>。</p>
+        </div>
+
+        <div id='stars3'></div>
+        <div id='stars4'></div>
+        <div class=" plain-text" style="text-align: justify; margin-top: 2em;width: 60%;margin:20px auto 0;" >
+            <p>B站和youtube都是重要的短视频发布平台，对作品的公开存档和长效传播都具有重要的意义。而抖音和tiktok是流媒体播放平台，有助于实时播放非遗作品的音视频内容。</p>
+            <p>我们整理得到，在B站平台，近一年作者发布非遗作品的热情高涨。其中，播放量top1的作品是《承包一片藕塘！抽尽藕杆里的藕丝！只为做一块比黄金更贵的印泥》。</p>
+        </div> 
+        <div class="pic-box" style="margin-top: 2em">
+            <iframe src="https://dycharts.com/xshow/index.html?id=c_ac49f0e89cbe3cb7359b9e739fed1716" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+        </div>
+ 
+       
+        
+        <!-- 左边文字，右边图片 -->
+        <div class="text-desc plain-text" style="text-align: justify; margin-top: 3em" >
+            <p>以“手工”“生活”“人文”“传统文化”等为代表的视频标签热点，解释了当前创作者内容中的主题是以手工制作类和生活类的非遗作品为主。</p>
+        </div> 
+        <div class="pic-box" style="margin-top: 2em;background: none;">
+            <img src="image/gll.gif" width="700" height="610" scrolling="no" frameborder="0" >
+        </div>
+        <div class="text-desc plain-text" style="text-align: justify" >
+            <p>对评论进行情感分析，大部分的网友对非遗类视频表现出正面积极的态度，仅有<span class="span-bold">9.05%</span>的评论对作品表现出负面情绪。</p>
+        </div>
+
+        <div class="text-desc plain-text" style="text-align: justify" >
+            <p>国内用户数量最多的短视频平台抖音，通过“非遗合伙人计划”“看见手艺计划”等专项计划助力非遗的传播。值得关注的是，<span class="span-bold">80、90后</span>的年轻人，正成为短视频平台非遗传承的主力军。诸多非遗达人在抖音找到传承技艺的新舞台。</p>
+        </div> 
+       
+        <div class="text-desc plain-text" style="text-align: justify;" >
+            <p>濒危非遗视频播放量同比增长<span class="span-bold">60%</span>，螺蛳粉、烤全羊等非遗美食最受欢迎。短视频平台赋能濒危非遗，帮助湖北的岳家拳、辽宁的东北大鼓、山西的九曲黄河阵等濒危的非遗作品获得更高的关注度。</p>
+        </div> 
+        <!-- 美食图片 -->
+        <div class="box">
+            <ul>
+                <li>
+                    <img src="image/1螺蛳粉.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP1螺蛳粉</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/2烤全羊.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP2烤全羊</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/3川菜.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP3川菜</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/4刀削面.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP4刀削面</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/5沙县小吃.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP5沙县小吃</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/6德州扒鸡.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP6德州扒鸡</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/7龟苓膏.jpg">
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP7龟苓膏</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/8桂林米粉.jpg" />
+                    <div class="txt" style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP8桂林米粉</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="js/jquery_ms.js"></script>
+        <script>$(".box ul li").hover(function (e) {
+                var left = $(this).offset().left, top = $(this).offset().top, right = $(this).offset().left + $(this).width(), bottom = top + $(this).height(); var x = e.pageX, y = e.pageY; var sT = Math.abs(top - y), sL = Math.abs(left - x), sB = Math.abs(bottom - y), sR = Math.abs(right - x); var min = Math.min(sT, sL, sB, sR); if (min == sT) { $(this).find(".txt").css({ left: 0, top: "-220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sB) { $(this).find(".txt").css({ left: 0, top: "220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sR) { $(this).find(".txt").css({ left: "164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sL) { $(this).find(".txt").css({ left: "-164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); }
+            }, function (e) {
+                var left = $(this).offset().left, top = $(this).offset().top, right = $(this).offset().left + $(this).width(), bottom = top + $(this).height(); var x = e.pageX, y = e.pageY; var sT = Math.abs(top - y), sL = Math.abs(left - x), sB = Math.abs(bottom - y), sR = Math.abs(right - x); var min = Math.min(sT, sL, sB, sR); if (min == sT) { $(this).find(".txt").stop().animate({ left: 0, top: "-220px" }, 500); } else if (min == sB) { $(this).find(".txt").stop().animate({ left: 0, top: "220px" }, 500); } else if (min == sR) { $(this).find(".txt").stop().animate({ left: "164px", top: 0 }, 500); } else if (min == sL) { $(this).find(".txt").stop().animate({ left: "-164px", top: 0 }, 500); }
+            });</script>
+        <div class="text-desc plain-text" style="text-align: justify" >
+            <p>各省独具特色的非遗项目成为地方短视频文化名片，助力地方城市形象提升，打造独特文化标识。比如，天津相声、安徽黄梅戏、广西柳州螺蛳粉等等。</p>
+        </div> 
+        <div class="pic-box" style="margin-top: 2em">
+            <img src="image/地图.png" width="600" height="510" scrolling="no" frameborder="0" align="" alt="">
+        </div>
+        <div class="text-desc plain-text" style="text-align: justify" >
+            <p>国家级非遗中的美食技艺也在抖音大放异彩，柳州螺蛳粉、烤全羊、川菜、龙须拉面和刀削面、沙县小吃、德州扒鸡、龟苓膏、桂林米粉、徽菜以及金华火腿等，占据了抖音网友喜爱的前10名榜单。</p>
+        </div> 
+        <div id='stars3'></div>
+        <div id='stars4'></div>
+        <div class="pic-box"  style="margin: 0 auto; padding: 0;">
+            <div style="margin-top: 60px">
+                <iframe src="https://dycharts.com/xshow/index.html?id=c_79b606164015b90a50bfe3f50472d409" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            </div>
+        </div>
+        <div class="text-desc plain-text" style="text-align: justify; margin-top: 3em" >
+            <p>youtube平台上，播放量top1的作品是《Repair Porcelain——Handicraft of Intangible Cultural Heritage in China（锔瓷——中国非遗传承手艺）》。</p>   
+        </div> 
+        <div class="pic-box" style="margin-top: 0em">
+            <img src="image/千库网_春节新年边框国风中式视频边框动图gif_GIF编号111359.gif" width="400" height="300" scrolling="no" frameborder="0" align="" alt="">
+            <img src="image/千库网_春节新年边框国风中式视频边框动图gif_GIF编号111359_2.gif" width="400" height="300" scrolling="no" frameborder="0" align="" alt="">
+        </div>
+        <div class="text-desc plain-text" style="text-align: justify; margin-top: 3em" >
+            <p>根据对视频时长平均播放量的对比，在youtube平台上的外国网友似乎更加偏爱的是1小时以上的非遗视频作品，反而1分钟以内的短视频的播放量为最低。</p>
+        </div> 
+        <div class="text-desc plain-text" style="text-align: justify;" >
+            <p>作为热门的海外社交平台，TikTok上有大量的非遗传承人以及爱好者自发地分享中国非遗文化的相关内容，在高赞视频下方的评论区里，来自各国的网友用不同种类的语言表达了对中国非遗文化的肯定和热爱。</p> 
+        </div>
+        <div class="text-desc plain-text" style="text-align: justify" >
+            <p>在热门中国非遗文化中，“武术”热度最高，TikTok上视频播放次数达<span class="span-bold">222亿</span>。</p>
+        </div> 
+        <div class="pic-box" style="margin-top: 2em">
+            <iframe src="https://dycharts.com/xshow/index.html?id=c_bd3a479f923632fd89784047481f1a41" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+        </div>
+        
+    </div>
+
+    <!-- 过渡透明 第三部分 -->
+    <div class="subsubtitle transparent-bg" id="anchor2">
+        传承新力量：接力现代体制，全面融入现代生活
+    </div>
+    
+    <div class="content" style="margin: 0 auto; text-align: center;">
+        <div class="text-desc plain-text" style="text-align: justify; margin-top: 50px">
+            非遗能够实现海内与海外传播比翼齐飞，相关政策法规的支持提供了很大一部分的助力。根据“十四五”非物质文化遗产保护规划的词云分析结果，发现现在对文化的传承、保护、记录、管理是工作部署重点。非遗法律保护工作进入快速发展时期，非遗传承迎来新局面。
+        </div>
+        <section class="section intro">
+            <div class="container">
+                <h1 style="color: #4F6A61;">水平时间轴 &rarr;</h1>
+            </div>
+        </section>
+        <section class="timeline" style="width: 70%;">
+
+            <ol>
+                <li>
+                    <div>
+                        <time>2005年3月26</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">国务院办公厅</p>
+                        <p>《关于加强我国非物质文化遗产保护工作的意见》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2005年12月22日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">国务院办公厅</p>
+                        <p>《国务院关于加强文化遗产保护的通知》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2006年12月1日</time>
+                        <p style="color:#4F6A61;    font-weight: bold;">文化部</p>
+                        <p>《国家级非物质文化遗产保护与管理暂行办法》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2008年5月14日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">文化部</p>
+                        <p>《国家级非物质文化遗产项目代表性传承人认定与管理暂行办法》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2011年2月26日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">中共中央办公厅、国务院办公厅</p>
+                        <p>《中华人民共和国非物质文化遗产法》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2017年1月25日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">中共中央办公厅、国务院办公厅</p>
+                        <p>《关于实施中华优秀传统文化传承发展工程的意见》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2019年11月29日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">文化和旅游部</p>
+                        <p>《国家级非物质文化遗产代表性传承人认定与管理办法》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2021年8月12日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">中共中央办公厅、国务院办公厅</p>
+                        <p>《关于进一步加强非物质文化遗产保护工作的意见》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2021年12月30日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">财政部 文化和旅游部</p>
+                        <p>《国家非物质文化遗产保护专项资金管理办法》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2022年5月22日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">国务院办公厅</p>
+                        <p>《关于加强我国非物质文化遗产保护工作的意见》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2022年8月16日</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">中共中央办公厅、国务院办公厅</p>
+                        <p>《关于推进实施国家文化数字化战略的意见》</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2005</time> 
+                        <p style="color:#4F6A61;    font-weight: bold;">文化和旅游部</p>
+                        <p>《“十四五”非物质文化遗产保护规划》</p>
+                    </div>
+                </li>
+                <li></li>
+            </ol>
+        </section>
+        <script src="./js/script_time.js"></script>
+        <div class="pic-box" style="width: 60%; margin: 0 auto;margin-top: 50px ">
+            <div class="side-desc" style="font-size: 17px;text-align:justify;width: 50%; padding:0; margin:0; float: left; background-color:rgba(0,0,0,0); color: #F2E8CD; font-weight: normal">
+                <p >11份国家级政策文件中有6份文件名称涉及到“保护”，政策公文的形式也较为多样，包括“意见”、“通知”、“办法”、“规划”四种下行文。强调“政府主导、社会参与”工作原则，建立非物质文化遗产和传承人名录体系，不断加大非遗文化保护工作的经费投入、人才培养和宣传力度。</p>
+            </div>
+            <img src="./image/保护.gif" style="width:50%; float: left;"/>
+        </div>
+        <div class="pic-box" style="width: 60%; margin: 0 auto;margin-top: 50px ">
+            <img src="./image/管理.gif" style="width:50%; float: left;"/>
+            <div class="side-desc" style="font-size: 17px;text-align:justify;width: 50%; padding:0; margin:0; float: left; background-color:rgba(0,0,0,0); color: #F2E8CD; font-weight: normal">
+                <p >11份国家级政策文件中有4份文件名称涉及到“管理”，包括对非遗项目、非遗项目代表性传承人、专项资金的管理条例或办法。例如制定国家级非物质文化遗产项目代表性传承人的评选要求和义务，进一步规范国家非物质文化遗产保护资金的管理，从而加强非遗保护工作的管理。</p>
+            </div>
+        </div>
+        <div class="pic-box" style="width: 60%; margin: 0 auto;margin-top: 50px ">
+            <div class="side-desc" style="font-size: 17px;text-align:justify;width: 50%; padding:0; margin:0; float: left; background-color:rgba(0,0,0,0); color: #F2E8CD; font-weight: normal">
+                <p >11份国家级政策文件中有3份文件名称涉及到“传承”，提到传承人和传承发展工程。非遗传承需坚持创造性转化和创新性发展。实施非物质文化遗产传承发展工程，进一步完善非物质文化遗产保护制度。实施传统工艺振兴计划，利用非遗文化滋养文艺创作，融入到人们日常的生产生活。</p>
+            </div>
+            <img src="./image/传承.gif" style="width:50%; float: left;"/>
+        </div>    
+    </div>
+    
+    <div></div>
+    <div class="subsubtitle transparent-bg" id="anchor3">
+        非遗有余忆：讲好非遗故事，见人见物见生活
+    </div>
+    <div class="content" style="margin-top: 0px; text-align: center;">
+        <div id='stars4'></div>
+        <div class="text-desc plain-text" style="text-align: justify">
+
+        </div>
+<!-- 故事 -->
+        <!-- <div id="content" >
+            <div id="gallery"style="width: 60%;margin: 20px auto 0;">
+                <div id="gallery_nav">
+                    <a class="on" rel="img1" href="javascript:;"><img src="image/iphone_1.jpg" /></a>
+                    <a rel="img2" href="javascript:;"><img src="image/iphone_2.jpg" /></a>
+                    <a rel="img3" href="javascript:;"><img src="image/iphone_3.jpg" /></a>
+                    <a rel="img4" href="javascript:;"><img src="image/iphone_1.jpg" /></a>
+                </div>
+                <div id="gallery_output">
+                    <img id="img1" src="./image/001.jpg" style="border-radius: 6px;">
+                    <img id="img2" src="./image/bgn.jpg" style="border-radius: 6px;">
+                    <img id="img3" src="./image/wxy00.png" style="border-radius: 6px;">
+                    <img id="img4" src="./image/iphone_4b.jpg" style="border-radius: 6px;">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div> -->
+        <div class="container">
+            
+            <h4 style="text-align:justify;font-weight: 600; color: #4F6A61;font-size: 20px;line-height: 45px;font-family: 仿宋;display: flex;flex-direction: row;justify-content: flex-start;width: 60%;margin: 20px auto 0;">“很多时候我们并不知道来到这个世界使命是什么，非遗更深层次的意义就在于帮助大家去认识人生，帮助我们回答三个问题：你是谁？你从哪里来？你到哪里去？”传承非遗的过程其是非遗传承人对自我的探寻，也更像是一场寻根之旅。非遗不仅仅是工艺品，其背后还包含着生活方式、生活态度和生活哲学，是中国文化的根与源。</h4>
+            <h4 style="text-align:center;font-weight: 600;color: #4F6A61;font-size: 20px;line-height: 45px;font-family: 仿宋;flex-direction: row;justify-content: flex-start;width: 60%;margin: 20px auto 0;">在一个个传承人的故事中，拥有匠人精神的他们，见自己、见天地、见众生。</h4>
+            <h4 style="text-align:center;font-weight: 600;color: #4F6A61;font-size: 20px;line-height: 45px;font-family: 仿宋;flex-direction: row;justify-content: flex-start;width: 60%;margin: 20px auto 0;">在一场场与非遗的相遇中，作为普通人的我们，见人、见物、见生活。</h4>
+                
+            <div class="ca-nav">
+                <span class="ca-nav-prev">Previous</span>
+                <span class="ca-nav-next">Next</span>
+            </div>
+            <div id="ca-container" class="ca-container">
+                <div class="ca-wrapper">
+                    <div class="ca-item ca-item-1">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>王新元</h3>
+                            <span style="font-weight: normal;    color: rgb(79, 106, 97);
+                            font-size: 15px;
+                            font-family: 仿宋;font-weight: bold;
+                            ">“传承不守旧！创新不忘本。”</span>
+                            <h4><span class="ca-quote"></span><span>王新元，“聚元祥”品牌创始人。2023年1月荣获广东省“优秀传承人”称号。现为国家级非物质文化遗产市级代表性传承人、广州市“最美退役军人”。</span></h4><a href="#"
+                                class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>七尺男儿广绣郎，指尖传承绽光芒</h6><a href="#" class="ca-close"></a>
+                                <div class="ca-content-text">
+                                    <p><p>拿起钢枪，曾经的他保家卫国，守护祖国边疆；重拈绣花针，现今的他以针为笔，勾勒别样的广绣人生，他就是国家级非物质文化遗产市级代表性传承人——王新元。</p>
+                                        <p>广绣历史悠久，最早可追溯到唐代，是具有深厚岭南特质的民间刺绣工艺。千年来，广绣历经辉煌，也曾断代停产无人问津。王新元用二十年如一日地默默耕耘，肩负起传承广绣的使命，不断探索广绣这门古老技艺的新生道路。</p>
+                                        <p>谈到广绣的未来，王新元甚至说出了“抢救”一词。传承人偏老龄化，国家级广绣传承人已进入耄耋之年，这让年轻的王新元看到了广绣传承的困境。</p>
+                                        <p>面对枯燥乏味的广绣学习，如何让广绣变得有趣，怎样让更多的年轻人愿意传承广绣，为此王新元做了许多努力，他尝试将卡通图案与广绣结合起来，例如“哆啦A梦”广绣扇子来吸引儿童，将“广绣”这枚小小的种子根植在孩子们的童年记忆里。与此同时，他开始涉猎新媒体平台，开设自媒体账号“广绣王新元聚元祥”，自己拍，自己运营，迎合着年轻人的喜好，发布短视频来传播广绣。</p>
+                                        <p>“我觉得广绣成就了我，成就了我的一生”。从最初的喜欢，不被人理解，到现在的刻苦钻研，让更多的人爱上广绣，王新元走的是一条不平凡的道路。作为退伍老兵的他，放下钢枪，拿起绣花针，古老的非遗广绣在他指尖传承绽放。</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-2">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>卢玮玮</h3>
+                            <span style="font-weight: normal;    color: rgb(79, 106, 97);
+                            font-size: 15px;
+                            font-family: 仿宋;font-weight: bold;">“文化自信需要我们的保护与坚守。”</span>
+                            <h4><span class="ca-quote"></span><span>卢玮玮，坊间人称“八姑姐”，广府传统婚俗第四代传承人，广东省非物质文化遗产传承人。从业二十五年，卢玮玮致力推动传统婚俗与时代融合发展，最早提出“中式主题婚礼”的概念。</span></h4><a href="#"
+                                class="ca-more">详情...</a>
+                               
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>广府婚俗“多面大妗姐”的二十多年传承创新路</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>烫着蓬松而颜色鲜艳的大卷发，身着破洞牛仔裤，脚踩短靴，就是这样一位海归潮流青年。在一次机缘巧合之下，卢玮玮走上了广府婚俗的执礼之路。</p>
+                                    <p>广府婚俗的历史最早可以追溯到周代的“六礼”，从古代发源至今，广府婚俗形成自身的独特风格。然而随着时代的变化，广式婚礼仪式也发生了演变。</p>
+                                    <p>八姑姐用自己改良的“柚子喷雾”替代新人婚礼前用来“洗身”的艾叶水、柚子叶水。使用“柚子喷雾”代替柚子水进行仪式，是否与传统背道而驰呢？传统与创新之间又该如何寻找到一个平衡点？</p>
+                                    <p>她认为：存在即合理，“柚子喷雾”是广府婚俗发展演变中的其中一种产物。我们顺应文化风俗演变的规律，将广府婚俗文化的元素以新的形式呈现出来，又何尝不是一种弘扬呢？</p>
+                                    <p>谈到广府婚俗的创新，就不得不提到八姑姐原创的“金玉满堂”饮品了。这不仅是八姑姐饮品调理师专业的体现，还融入了广府婚俗的核心元素。</p>
+                                    <p>八姑姐说：“文化自信需要我们的保护与坚守，更需要我们每一个人的努力，否则不仅有遗失的风险，还有被其他文化吸纳同化的可能。”广府婚俗流传至今，流走的是时光，不变的是蕴含的仪式感与回忆，“八姑姐”卢玮玮用自己的初心与热爱，坚守传统再创新，讲述着“花好月圆”的传承故事。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-3">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>彭艺</h3>
+                            <span style="font-weight: normal;    color: rgb(79, 106, 97);
+                            font-size: 15px;font-weight: bold;
+                            font-family: 仿宋;">让少数民族的“指尖技艺”转化为“指尖经济”，“我想把她传承下去”</span>
+                            <h4><span class="ca-quote"></span><span>彭艺，国家级非物质文化遗产代表性项目苗绣市级代表性传承人，入选2021“中国非遗年度人物”100人候选名单和2021“中国非遗年度提名人物”名单。</span></h4><a href="#" class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>当苗绣遇上“硕士绣娘” 与时俱进“绣”出美好生活</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>苗绣是指苗族民间传承的刺绣技艺，主要流传在贵州省黔东南地区苗族聚集区。</p>
+                                    <p>“苗绣的技法非常多，但在我们歪梳苗的技法当中，它只有三种，第一马尾绣，第二剪纸绣，第三还有挑花绣......”谈起苗绣，彭艺就有说不完的话。但随着机器慢慢代替了手工，这项技艺的传承变得青黄不接。</p>
+                                    <p>“我想把她传承下去。”她说。</p>
+                                    <p>在这样的念头下，彭艺去贵州民族大学民间美术专业深造学习，毕业后，彭艺创办了工作室和公司，她想带着化屋村的妇女们在家门口就业，让少数民族的“指尖技艺”转化为“指尖经济”。</p>
+                                    <p>但在起步时，村子里的人都说她疯了，有的村民跟她说：“我们自己民族的人都不穿，你想一下谁会买你的产品”，开办的培训班也只有两三个看着面子来的。被泼了冷水的彭艺并没有放弃，她挨家挨户地敲门，苦口婆心地劝她们来学习。功夫不负有心人，如今已有68名绣娘实现了在家门口创收。</p>
+                                    <p>谈到对未来的设想，彭艺的想法很“接地气”：“我想把苗绣带进校园，把苗绣带到每个苗族的村寨去，我们可以创办更多的乡村工坊，我们送订单，送设备，然后送技术，帮助他们获得一些收入，生活得更好。”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ca-item ca-item-4">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>黄建红</h3>
+                            <span style="font-weight: normal;    color: rgb(79, 106, 97);
+                            font-size: 14px;font-weight: bold;
+                            font-family: 仿宋;">“通过点茶我们能品味那个时代的文化底蕴，还有他们生活的方式，这才是我们为什么要拾起它的意义。”</span>
+                            <h4><span class="ca-quote"></span><span>黄建红，国家高级评茶员，广州市荔湾区非遗项目广州茶艺（点茶技艺）传承人，宋代点茶文化“盏影宋梦”创始人。</span></h4><a
+                                href="#" class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>复刻宋式点茶建盏，走出独特拾遗之路</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>“茶有真香，非龙麝可拟”。在宋朝，从皇帝到文人，都喜爱“点茶”“斗茶”，而建盏正是因点茶、斗茶而兴。在广州市荔湾区，点茶技艺传承人黄建红用她的热爱与坚持，弘扬宋代点茶美学，古法复刻建窑建盏，走出了一条不一样的拾遗之路。</p>
+                                    <p>带着复兴建盏的心情，2015年，黄建红决定暂时放下茶，回到家乡建阳，复兴建窑建盏。一开始，黄建红的砖窑建造好之后，开窑时却没有收获成品。在经历这次失败的开窑后，黄建红和同事们不仅重新调整烧制的流程，同时也在器物的器型上进行新的研发设计。</p>
+                                    <p>十几年的拾遗之旅，黄建红不仅拾起了建盏烧制技艺，同样也拾起了宋代的点茶技艺。点茶作为一门兴于宋代的技艺，到明代朱元璋废除团茶后，开始慢慢式微。“点茶”一度被认为被泡茶法所替代。</p>
+                                    <p>然而，黄建红认为，“与其说是代替，不如说是讲究。宋人实际上已经将茶系统玩到了一个特别高的境界，它代表着一种茶文化精神，一种对生活的讲究。技艺断代并不代表对美的追求、美学精神就断了”。</p>
+                                    <p>在黄建红眼中，点茶是一种技艺、一种喝茶方式，更是一种生活方式。“通过点茶我们能看到那个时代的文化底蕴，还有他们生活的方式，这才是在我们现代为什么要捡起它的意义。”</p>
+                        
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-5">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3 >练晓红</h3>
+                            <span style="font-weight: normal;    color: rgb(79, 106, 97);
+                            font-size: 14px;font-weight: bold;
+                            font-family: 仿宋;">“我感谢上天没有收走我的命，让我继续努力下去。”</span>
+                            <h4><span class="ca-quote"></span><span>练晓红，广东省第十三届人大代表、中级工艺美术师、广州剪纸荔湾区非物质文化遗产代表性传承人。</span></h4><a href="#" class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>练晓红：妙剪生花 刻画别样人生</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>“以文创作为一个突破口，去创造一个新鲜的东西，就是为了告诉大家，其实非遗也可以很年轻、很时尚，也可以很有活力。”</p>
+                                    <p>广州剪纸早在宋朝时期就初具雏形，发展到清代时期，广州剪纸已然繁盛，后来剪纸行业凋零。而在广州市荔湾区，练晓红一家却致力于广州剪纸的复活与传承。</p>
+                                    <p>从2012年广州剪纸被纳入非遗，已经11年；练晓红的剪纸传承之路，也刚好走过了11年。然而，在很长一段时间内，面对剪纸营生难以糊口、母亲患有小儿麻痹双腿瘫痪，练晓红是不愿将剪纸传承下去的。</p>
+                                    <p>练晓红谈到回归剪纸，是源于一次代课，因母亲腿疾复发，便代替母亲去上剪纸课，通过和孩子们的相处，一种前所未有的成就感直击她的内心。她想要更多的孩子能够知道这样的一种文化。</p>
+                                    <p>练晓红一直想去做更多创新，商业方面，练晓红团队选择了文创。她认为：“以文创作为一个突破口，去创造一个新鲜的东西，就是为了告诉大家，其实非遗也可以很年轻、很时尚，也可以很有活力”。2015年，练晓红的作品《五羊仙传说》在广州五羊地铁站进行合作展览，宣传热度高涨。</p>
+                                    <p>与此同时，练晓红团队也在不断思考着如何使非遗文化更加年轻化。“我是想将剪纸以至于整个非遗文化的市场开阔起来”。练晓红认为，“其实最终的愿望就是希望我们的非遗文化可以走出国门，希望国外能看到我们中国优秀的传统文化，可以改变外国人对我们中国文化的一些误解和曲解”。</p>
+          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-6">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>刘锡桦</h3>
+                            <span style="font-weight: normal;    color: rgb(79, 106, 97);
+                            font-size: 15px;font-weight: bold;
+                            font-family: 仿宋;">“要在继承传统的基础上坚持创新”</span>
+                            <h4><span class="ca-quote"></span><span>刘锡桦，广州市荔湾区非物质文化遗产项目广式硬木家具制作技艺代表性传承人，中国家具协会第一届青年委员。</span></h4><a href="#" class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>刘锡桦：守与创，两代广作人的传承之路</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>广州以“三雕一彩一绣”的文化著称，其中广州木雕素以精细、繁复、华丽而闻名。2008年，广式硬木家具制作技艺被列入第二批国家级非物质文化遗产名录。广式家具曾风靡一时，名扬海外内。但如今在广东本地家具市场上，真正的广作精品已不多见。在广州，刘锡桦刘柏浩父子在“守艺”与“创艺”的道路上讲述着他们的传承故事。</p>
+                                    <p>在谈及耕酸堂的发展方向时，父子俩达成共识——要在继承传统的基础上坚持创新。自从刘锡桦开始接管耕酸堂后，父亲就给他定下了“规矩”：第一是榫卯，绝对不能乱改；第二重要的则是形态。</p>
+                                    <p>当被问到广作技艺中最难的环节时，刘锡桦的答案是“将它卖出去”。广式家具之所以会逐渐远离大众生活，一方面是审美的变化，另一方面是高昂的价格。</p>
+                                    <p>为此，耕酸堂从去年开始尝试开设抖音账号，不仅介绍木雕技艺，也有直播带货。父亲刘柏浩是一个守艺人，将热爱都奉献在广式家具的制作技艺上。刘锡桦是一个创艺人，他在不断为广式家具注入新力量，在保留传统的榫卯结构、木雕工艺等广式硬木家具特色的前提下，设计出符合现代人审美和生活方式的新式家具。</p>
+                                    <p>不同时代的匠人有着不同的使命，精彩绝妙的广式木作技艺定能在“守艺人”与“创艺人”的不断探索创新下蓬勃新生。</p>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-7">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>00后</h3>
+                            <span style="font-weight: normal;    color: rgb(79, 106, 97);
+                            font-size: 15px;font-weight: bold;
+                            font-family: 仿宋;">“要在继承传统的基础上坚持创新”</span>
+                            <h4><span class="ca-quote"></span><span>一梭千年，串起西湖的清风朗月、宋朝的悠久底蕴，将劳动人民的的智慧与几千载的中国审美织进一匹杭罗的千年传承。</span></h4><a href="#" class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>00后作家笔下生风，非遗杭罗入网文</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>一次喜逢，慈莲笙邂逅杭罗织造，念念不忘的是刚柔滑爽的手感、美观雅致的花纹。</p>
+                                    <p>几场妙遇，00后书写杭罗入网文，当代文艺之声与千载文化之音相织相扣，回声朗朗。</p>
+                                    <p>罗，因产于杭州，故名“杭罗”。据《杭州市志》载：“罗中的秋罗、绮罗均为名产。”杭罗历史久远、地位特殊，其生产可以追溯到春秋战国时期，元、明、清时的杭州丝绸。杭罗织造技艺现已先后列入杭州市级、浙江省级、国家级非物质文化遗产、世界非物质文化遗产名录。</p>
+                                    <p>慈莲笙是年轻的网文作家，以杭罗织造为题材、现实感受为基础创作了网络文学小说《一梭千年》。而事实上，因为“意识到网文传播面更广一些，能让更多人看到非遗，以及我想表达的文化意涵”，慈莲笙在走南闯北亲自遇见非遗的旅程中，获得对非遗的感悟与理解。</p>
+                                    <p>在苏州，拜访昆曲传习所，寻找檀香山；在南京，惊叹云锦之美；在杭州，走访杭罗织造厂，专程去往西泠印社。乘着火车，亲自奔向非遗，与其撞个满怀，或者即使遗憾扑个空，对于慈莲笙来说，这两年的探访帮助她积累了宝贵的非遗创作素材。</p>
+                                    <p>慈莲笙是在7月末去到的杭罗厂，“里头比外头还热，又特别吵”。这些真实的切身体会和感受给她带去视听震撼，反而也增加了进入文学作品的非遗的感染力、影响力。</p>
+                                    <p>“文化是共通的，普通人只要喜欢非遗，哪怕只做一点点贡献，都有用。”慈莲笙如是说。网络文学的创作也离不开传统文化的根与源，同时，用网文传播非遗，是跨越时代与空间的创新，几千年的传承就这样在普通年轻人的笔下，与时代的脉搏共振。 </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-8">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>陈奕池</h3>
+                            <h4><span class="ca-quote"></span><span>雾烟缭绕，鸾驾开道。忽而单龙腾飞，忽而双龙缠绕，忽而子母龙穿梭嘻戏，从陆上翻滚下岷江畅游，在峨眉山麓、大佛足下闹了个轰轰烈烈，一时间，古老嘉洲“满城尽说竹编龙”，此乃青神竹编的兴起。百年时光匆匆，陈奕池在暑期时光学起了名声大噪的竹编。</span></h4><a href="#"
+                                class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>一个暑假，入门竹编</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>随着不少非遗传承人开始在短视频及网络社交平台上展示并讲解非遗技艺，有关非物质文化遗产的精彩作品不断走红出圈。一部分年轻网民不再只是默默围观，而是主动学习相关技能。</p>
+                                    <p>竹编是四川省眉山市青神县的非遗传统手工艺，早在两千多年前的战国时代，青神的先民便就地取材，利用当地自然生长的竹子编织各类器物。</p>
+                                    <p>出生于青神县的陈奕池是中国美术学院手工艺术学院在读研究生。一次逛街时，陈奕池在一家商店橱窗前，被一件竹编工艺制作的摆件吸引住了。当离家千里之外的陈奕池再次看到家乡的竹编工艺品时，儿时记忆便涌上心头。于是，她特地利用暑假，返回故乡青神县，向青神竹编工艺非物质文化遗产代表性传承人、中国竹编艺术家张德明拜师学艺。</p>
+                                    <p>“做竹编真的很快乐。”陈奕池说，自己只需把注意力放在双手之上，用心感受自然材料本身的质地，就能摆脱日常生活的浮躁气息，与自然相拥。</p>
+                                    <p>2022年8月，陈奕池开始将自己的竹编作品搬上社交网络，很多网友表示很感兴趣，想跟着学。随着陈奕池的竹编作品为更多人所知，一些国际品牌主动找上门，邀请她做手工体验活动老师。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-9">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>张明宇</h3>
+                            <h4><span class="ca-quote"></span><span>“云鬓半偏新睡觉，花冠不整下堂来。”唐代诗人白居易如是描绘缠花。不同的缠花代表不同的技艺，但大都是包含了前途似锦、有福有禄、读书晋学、十全十美的吉祥含义。00后张明宇却将缠花做美食，螺蛳粉、红烧肉跃然指间。</span></h4>
+                            <a href="#" class="ca-more">详情...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>一碗螺蛳粉，竟是缠花作</h6><a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>张明宇是中国铁路兰州局集团有限公司兰州西机务段的一名“00后”见习生，从小就对艺术和设计感兴趣。2020年，张明宇在网上无意中看到了制作缠花的视频，随即开始主动学习探索。缠花制作强调设计的创意感，色彩搭配也追求丰富多元，想要做好做精，并不容易。</p>
+                                    <p>2022年9月，张明宇在小红书注册了账号“绾云舒”，开始发布由他制作的缠花作品。其中一件“缠花版螺蛳粉”，收获了大量网友喜爱。酸豆角、花生米、木耳丝、炸腐竹……现实螺蛳粉中必不可少的配料，都被他惟妙惟肖地制作出来。晶莹的“米粉”悬在“碗边”，让网友直呼“逼真”。</p>
+                                    <p>除了“螺蛳粉”，张明宇制作的“红烧肉”、“火锅”等作品也受到网友追捧。有的网友惊讶于“没想到缠花还可以做美食”，有的网友询问同款教程。</p>
+                                    <p>“在缠花技艺中加入美食元素，打破了一些网友对缠花的固有印象。他们没想到缠花除了用来做钗、簪之类的首饰外，还可以做其他工艺品。”张明宇介绍，做一件“火锅”或“螺蛳粉”主题的缠花作品，从画手稿到组装成品，大概要15至20个小时。“自己目前技术还不太到位，希望慢慢学扎实。目前的作品不会拿去卖。”</p>
+                                    <p>网络社交空间正成为非遗传承新平台。对于青年人来说，利用网络社区互学互勉、开放交流的优势，将非遗技艺传播出圈，正是实现非遗接续传承的新契机。</p>
+     
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="margin-top: 100px;">【后记】</h2>
+        <div class=" plain-text" style="text-align:center;margin-bottom: -0.6rem;line-height: 35px;" >
+            <p>非物质文化遗产是最古老、最生动的历史传承</p>
+        </div> 
+        <div class=" plain-text" style="text-align: center;margin-bottom: 2rem;line-height: 35px;" >
+            <p>凝结着人类丰富的生活智慧，展现着深刻的文化记忆</p> 
+        </div>
+        <div class=" plain-text" style="text-align: center;margin-bottom: -0.6rem;line-height: 35px;" >
+            <p>非遗不仅活在网上，更是火在当下</p>
+        </div> 
+        <div class=" plain-text" style="text-align: center;margin-bottom: -0.6rem;line-height: 35px;" >
+            <p>乘时代国潮之风，以数字技术为翼</p>
+        </div>         
+        <div class=" plain-text" style="text-align: center;margin-bottom: 2rem;line-height: 35px;" >
+            <p>借影像记录，让世界听到非遗故事</p>
+        </div> 
+        <div class=" plain-text" style="text-align: center;margin-bottom: -0.6rem;line-height: 35px;" >
+            <p>赓续中华文脉 谱写非遗华章</p>
+        </div> 
+        <div class=" plain-text" style="text-align: center;margin-bottom: -0.6rem;line-height: 35px;" >
+            <p>我们希望通过这个作品助力非遗文化活态传承</p>
+        </div> 
+        <div class=" plain-text" style="text-align: center;margin-bottom: 2rem;" >
+            <p>吸引更多的年轻人为保护和传承非遗文化贡献一份力量</p>
+        </div> 
+        <div class=" plain-text" style="text-align: center;margin-bottom: 2rem;" >
+            <p>在人人都是广播站的时代，我们每一个人都是非遗传承人</p>
+        </div> 
+        <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="./js/jquery.contentcarousel.js"></script>
+        <script type="text/javascript">$('#ca-container').contentcarousel();</script>
+<!-- 故事 -->       
+        
+
+        <div class="pic-box"  style="margin-top:1em; margin-left: 50px" >
+            <div>
+
+            </div>
+        </div>
+    
+
+       
+    </div>
+    
+    
+    <div class="footer" style="line-height: 30px; width:100%; margin: 0 auto; text-align: center; padding-bottom: 2em;">
+        <div style="width: 60%; text-align: left; margin: 0 auto;">
+        <p>团队成员：周娜赟 蔡妤枫 司徒锦仪 甘灵文</p>
+        <p>指导老师：赵甜芳 谷虹</p>
+        <p>数据来源：[1]中国非物质文化遗产网</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2]哗哩哗哩、抖音、Youtube、Tiktok视频平台</p>
+        <p>参考资料：[1] 人民网：《3.21世界睡眠日：关注睡眠就是关注健康》 </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2] 央视财经：《经济信息联播：我国胃病发生率达85% 患者群体年轻化》</p>   
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3] 人民日报：《调查：近六成大学生有容貌焦虑，女生焦虑感更强》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4] 寻医问药网：《为什么喝茶了晚上睡不着》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5] 北青网-北京青年报：《这样睡，“躺赢”3亿失眠人》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6] 新华社：《研究发现：失眠人群患抑郁症人数为正常人3倍》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7] 中国小康网：《宅家睡不好免疫下降？10道题自测你的睡眠健康吗》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8] 央视财经：《睡眠不足会拖累国家经济增长？美国“中招”最严重 每年损失2.6万亿元》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[9] 健康教育平台：《失眠的危害——对社会经济的影响》 </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[10] 人民网-科普中国 </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[11] 美国国家精神健康研究所数据</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[12]《2015年中国睡眠指数报告》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[13]《2016中国中产阶层睡眠指数白皮书》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[14]《2017年中国青年睡眠状况白皮书》 </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[15]《2020年喜临门中国睡眠指数报告》 </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[16]《2021年中国睡眠研究会数据》 </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[17] 李林憶.网络社区中网络趣缘群体传播现象探究——以“豆瓣小组”为例[J].新媒体研究,2020,6(19):76-78.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[18] Hayashi,T.Odagiri,Y.Takamiya,T.Ohya,Y.& Inoue,S.(2015).Organizational justice and insomnia:Relationships between justice components and insomnia symptoms among private company workers in Japan. Journal of occupational </p>
+       </div>
+       <div style="width: 60%; text-align: center; margin: 0 auto; margin-top: 2em; ">
+        <p style="margin: 0;">2022 © 暨南大学 新闻与传播学院</p>
+        </div>
+    </div>
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jtopo-0.4.8-min.js"></script>
+    <script src="./js/floating.js"></script>
+    <script type="text/javascript" src="./js/mycharts.js"></script>
+    <!--====== back-to-top ======-->
+    <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
+    <!--====== Popper ======-->
+    <script src="static/js/popper.min.js"></script>
+    <!--====== Bootstrap ======-->
+    <script src="./static/js/bootstrap.min.js"></script>
+   
+    <script type="text/javascript" src="static/js/loader.js"></script>
+    <!--====== Slider ======-->
+    <script src="static/js/slick.min.js"></script>
+    <!--====== counterup js ======-->
+    <script src="static/js/jquery.counterup.min.js"></script>
+    <!--====== waypoints js ======-->
+    <script src="static/js/jquery.waypoints.js"></script>
+    <!--====== Main Script ======-->
+    <script src="static/js/custom.js"></script>
+    
+    <script type="module" src="https://unpkg.com/dark-light-mode">
+    </script>
+  
+    <style>
+        main,
+        aside {
+            max-width: 50em;
+            margin: auto;
+        }
+
+        aside {
+            position: relative;
+        }
+
+        dark-light-mode {
+            position: absolute;
+            right: 0;
+            padding: 1rem;
+        }
+    </style>
+
+   
+</body>
+</html>
+
