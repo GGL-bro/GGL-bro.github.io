@@ -281,7 +281,7 @@
     </div>    
     
     <!-- 标准图表+文本段落 -->
-    <div class="content" id="first-content" style="margin-top:-110px">
+    <div class="content" id="first-content" style="margin-top:-110px;padding-bottom: 3px;">
         <div class="pic-box" style="margin-top: 2em">
             <img src="image/动态维诺图-副本.gif" width="600" height="510" scrolling="no" frameborder="0" align="" alt="">
         </div>
@@ -498,8 +498,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
-        <p style="font-size: 14px;
+            <p style="font-size: 14px;
                 font-family: '阿里巴巴普惠体 常规';
                 text-anchor: start;
                 letter-spacing: 0px;
@@ -514,6 +513,8 @@
                 margin-bottom: 30px;
                 margin-left: auto;
                 width:600px;">图11 抖音网友非遗美食喜爱度TOP8（数据来源:抖音《2022非遗数据报告》）</p>
+        </div>
+        
         <script type="text/javascript" src="js/jquery_ms.js"></script>
         <script>$(".box ul li").hover(function (e) {
                 var left = $(this).offset().left, top = $(this).offset().top, right = $(this).offset().left + $(this).width(), bottom = top + $(this).height(); var x = e.pageX, y = e.pageY; var sT = Math.abs(top - y), sL = Math.abs(left - x), sB = Math.abs(bottom - y), sR = Math.abs(right - x); var min = Math.min(sT, sL, sB, sR); if (min == sT) { $(this).find(".txt").css({ left: 0, top: "-220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sB) { $(this).find(".txt").css({ left: 0, top: "220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sR) { $(this).find(".txt").css({ left: "164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sL) { $(this).find(".txt").css({ left: "-164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); }
